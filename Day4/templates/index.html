@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel='stylesheet' href='../static/css.css'>
+    <script src="../static/custom.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <section>
+        <h1>Album In</h1>
+        <form action="/save" method="POST">
+                Title <input type="text" name="title" id="title" value="{{ request.form.title }}" required=true><br/>
+                Artist <input type="text" name="artist" id="artist" value="{{ request.form.artist }}" required=true><br/>
+                Media <input type="text" name="media" id="media" value="{{ request.form.media }}" required=true><br/>
+                <input type="submit" value="submit">
+        </form>
+        <hr>
+            <input type="submit" value="All Student Page" action="/allStudent">
+    </section>
+</body>
+</html>
